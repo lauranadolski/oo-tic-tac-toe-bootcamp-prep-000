@@ -100,11 +100,11 @@ end
 
 # #full? returns true if the board is filled.
 
-def full?
-  @board.all? do |place|
-    (place== "X") || (place == "O")
+  def full?
+    @board.all? do |place|
+      (place== "X") || (place == "O")
+    end
   end
-end
 
 # #draw? returns true if the board is full but has not been won. It returns false if the board is not yet full and no win has occured, or if the board has been won.
 
