@@ -108,23 +108,23 @@ end
 
 # #draw? returns true if the board is full but has not been won. It returns false if the board is not yet full and no win has occured, or if the board has been won.
 
-def draw?
-  if won?
-    return false
-  elsif full?
-    return true
+  def draw?
+    if won?
+      return false
+    elsif full?
+      return true
+    end
   end
-end
 
 # #over? returns true if a win has occured, a draw has occured, or the board is full.
 
-def over?
-  if won? || draw? || full?
-    return true
-  else
-    return false
+  def over?
+    if won? || draw? || full?
+      return true
+    else
+      return false
+    end
   end
-end
 
 # #winner returns the winning character, given that the game has been won.
 
