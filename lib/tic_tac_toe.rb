@@ -39,7 +39,7 @@ class TicTacToe
 
 # #position_taken? checks to see whether the space the user wants to play their move is already taken or not. Returns true if the position is indeed taken, or false if it is free.
 
-  def position_taken?(index)
+  def position_taken?(board = nil, index)
     @board[index] != " " && @board[index] != ""
   end
 
