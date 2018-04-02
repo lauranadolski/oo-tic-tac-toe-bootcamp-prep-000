@@ -51,18 +51,18 @@ class TicTacToe
 
 # #turn_count returns the number of turns already played.
 
-  def turn_count
-    @board.count{|token| token == "X" || token == "O"}
+  # def turn_count
+  #   @board.count{|token| token == "X" || token == "O"}
 
-# def turn_count(board)
-#   counter = 0
-#   board.each do |movemade|
-#     if movemade == "X" || movemade == "O"
-#     counter += 1
-#     end
-#   end
-#   return counter
-# end
+def turn_count(board = nil)
+  counter = 0
+  @board.each do |movemade|
+    if movemade == "X" || movemade == "O"
+    counter += 1
+    end
+  end
+  return counter
+end
 
 # #current_player determines whether it's "X"'s or "O"'s turn.
 
