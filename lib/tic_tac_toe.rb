@@ -128,30 +128,30 @@ end
 
 # #winner returns the winning character, given that the game has been won.
 
-def winner
-  if won?
-    winnerchar = won?
-    return @board[winnerchar[0]]
-  else
-    return nil
+  def winner
+    if won?
+      winnerchar = won?
+      return @board[winnerchar[0]]
+    else
+      return nil
+    end
   end
-end
 
 # #play is responsible for the overall game loop. It activates turns while checking whether the game is over or not before ending the turns. When the game is in fact over, it then reports the game outcome.
 
-def play
-  until over? == true
-    turn
-  end
-  if over?
-    if won?
-      thewinner = winner
-      puts "Congratulations #{thewinner}!"
-    else
-      puts "Cat's Game!"
+  def play
+    until over? == true
+      turn
+    end
+    if over?
+      if won?
+        thewinner = winner
+        puts "Congratulations #{thewinner}!"
+      else
+        puts "Cat's Game!"
+      end
     end
   end
-end
-end
+  end
   
 end
