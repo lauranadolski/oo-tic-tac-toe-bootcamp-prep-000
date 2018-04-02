@@ -66,8 +66,13 @@ class TicTacToe
 
 # #current_player determines whether it's "X"'s or "O"'s turn.
 
-  def current_player
-      turn_count % 2 == 0 ? "X" : "O"
+  # def current_player
+  #     turn_count % 2 == 0 ? "X" : "O"
+  # end
+
+ def current_player
+    turnnumber = turn_count
+    turnnumber.even? ? "X" : "O"
   end
 
 # #turn implements a full turn. It asks the user where they want to make their move, and if valid, it makes the move and displays the board. Else, it prompts the user for a new position until it receives a valid move.
