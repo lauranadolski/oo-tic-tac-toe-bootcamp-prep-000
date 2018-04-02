@@ -45,7 +45,7 @@ class TicTacToe
 
 # #valid_move? accepts an index. It returns true if the move is valid (present on the game board and not yet filled by another character) and false/nil if it is not.
 
-  def valid_move?(index)
+  def valid_move?(board = nil, index)
     index.between?(0,8) && !position_taken?(@board, index)
   end
 
