@@ -1,4 +1,9 @@
+# April 1, 2018
+# Laura Nadolski
+# Flatiron Bootcamp - Intro to Ruby
 
+# Tic Tac Toe - OO
+# A simple tic tac toe game coded in Ruby.
 
 class TicTacToe
   
